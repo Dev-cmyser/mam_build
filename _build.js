@@ -86,6 +86,7 @@ if (token) {
 }
 
 // install dependencies
+exec(root, 'npm', 'install', 'pg', '@types/pg')
 exec(root, 'npm', 'install', '--force', '--legacy-peer-deps')
 
 for (const mod of modules) {
