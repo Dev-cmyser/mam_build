@@ -86,7 +86,7 @@ if (token) {
 }
 
 // install dependencies
-exec(root, 'npm', 'install')
+exec(root, 'npm', 'install', '--force', '--legacy-peer-deps')
 
 for (const mod of modules) {
 	build: exec(root, 'npm', 'start', mod)
